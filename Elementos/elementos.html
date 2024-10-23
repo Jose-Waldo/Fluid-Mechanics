@@ -25,7 +25,7 @@
     
     <header class="barraNav">
         <div class="barraNav__fondo"></div>
-        <h1 class="barraNav__logo"><a href="https://jose-waldo.github.io/PRINSIPAL-Fluid-Mechanics/" class="barraNav__logoIni">Fluid <span class="barraNav__logoSec">Mechanics</span></a></h1>
+        <h1 class="barraNav__logo"><a href="" class="barraNav__logoIni">Fluid <span class="barraNav__logoSec">Mechanics</span></a></h1>
         <ul class="barraNav__elems">
             <li class="barraNav__elems--item"><a href="../index.html" class="leter">Inicio</a><i class="fas fa-solid fa-angle-down arrow"></i></li>
             <li class="barraNav__elems--item"><a href="../Aprendizaje/Aprendizaje.html" class="leter">Aprendizaje</a><i class="fas fa-solid fa-angle-down arrow"></i></li>
@@ -465,7 +465,60 @@
         </div>
     </section>
 
+    <section class="seleccion-diametros">
+        <select class="seleccion-tabla">
+          <option value="Tabla 1">Tabla 1</option>
+          <option value="Tabla 1">Tabla 1</option>
+          <option value="Tabla 1">Tabla 1</option>
+          <option value="Tabla 1">Tabla 1</option>
+          <option value="Tabla 1">Tabla 1</option>
+        </select>
     
+        <h2 class="titulo-prime">CALCULADORA DE DIAMETROS.</h2> <!--Titulo-->
+    
+        <div class="campo-entrada">
+            <h3 class="titulo-calc">Ingrese el Caudal (l/s): </h3> <!--Titulo entrada-->
+            <div class="caudal" contenteditable="true"></div>  <!--Entrada-->
+            
+            <div class="boton" id="boton"> <!--Boton de calculo-->
+              Calcular
+            </div>
+    
+            <div class="refresh"> <!--Boton de refrescar-->
+              R
+            </div> 
+        </div>
+    
+        <div class="tabla"> <!--Tabla muestra de diametros y parametros-->
+          <table class="tablaa">
+            <tr class="titulos">
+                <th class="cabecera">Diametro Nominal (mm)</th>
+                <th class="cabecera">Diametro Nominal (in)</th>
+                <th class="cabecera">Peso (g/m)</th>
+                <th class="cabecera">Diametro Exterior (mm)</th>
+                <th class="cabecera">Diametro Exterior (in)</th>
+                <th class="cabecera">Espesor de pared minimo (mm)</th>
+                <th class="cabecera">Espesor de pared minimo (in)</th>
+                <th class="cabecera">Diametro interno promedio (mm)</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="al">
+            <div class="especificaciones"> <!--Especificaciones del material-->
+              
+            </div>
+      
+            <div class="boton2" id="boton" style="display: none;"> <!--Boton de calculo-->
+              Almacenar
+            </div>
+          </div>
+
+    </section>
+
+    <div class="cerrarNav">
+
+    </div>
 
     <script src="script.js"></script>
 </body>
