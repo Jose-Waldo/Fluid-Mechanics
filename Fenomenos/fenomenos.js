@@ -16,7 +16,7 @@ let radio = 0.01;
 let altura = 0.3;
 let velocidadFinal;
 let tiempo;
-let boton = document.querySelector(".refrescar");
+
 
 let hijosGrafico;
 
@@ -113,18 +113,7 @@ canica.addEventListener("click", function(){
     }
 })
 
-boton.addEventListener("click", function(){
-    while(primero.firstChild) {
-        let condicion = primero.firstChild.className;
-        if (condicion == "numero" || condicion == "y" || condicion == "ejex" || condicion == "ejey"){
-            continue
-        }
 
-        else {
-            primero.removeChild(primero.firstChild);
-        }
-    }
-})
 
 
 // ANIMACION CUBO
