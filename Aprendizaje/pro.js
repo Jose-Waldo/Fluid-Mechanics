@@ -1549,22 +1549,22 @@ function toggleHint(index) {
 
 // Esta sera la funsión que se debe actualizar.
 const container = document.getElementById('exercises-container');
-let cont = 1;
+let cont = 2;
 
 function initializeExercises(nombreContenedor, ejercicioUsado) {
-    cont++
-    console.log(cont)
     for (let i = 0; i < 3; i++) {
         if (i == 0) {
             continue
         }
+
         const templateIndex = i % ejercicioUsado.length;
-        const exercise = createExercise(ejercicioUsado[templateIndex], (i*cont));
+        const exercise = createExercise(ejercicioUsado[templateIndex], (i+2*cont));
         nombreContenedor.appendChild(exercise);
     }
     document.addEventListener("DOMContentLoaded", () => {
     MathJax.typeset();
 });
+cont++
 }
 
 // Variables necesarias para mostrar ejercicios
@@ -1581,7 +1581,7 @@ const contenTensionSuperficial = document.getElementById("exercises-container-te
 const contenCaudal = document.getElementById("exercises-container-caudal")
 // const contenRapidezFlujoPeso= document.getElementById("exercises-container-rapides-flujo-peso")
 /////// Esto es para los restantes
-// const contenRapidezFlujoPeso= document.getElementById("exercises-container-flujo-peso")
+const contenRapidezFlujoPeso= document.getElementById("exercises-container-flujo-peso")
 const contenRapidezFlujoMasico = document.getElementById("exercises-container-flujo-masico")
 const contenRapidezEcContinuidad = document.getElementById("exercises-container-ecuacion-continuidad")
 const contenRapidezEcGeneralEnergia = document.getElementById("exercises-container-ecuacion-general-energia")
@@ -1606,7 +1606,7 @@ window.onload = initializeExercises(contenPrensaHidraulica, exerciseTemplatesPre
 window.onload = initializeExercises(contenCapilaridad, exerciseTemplatesCapilaridad);
 window.onload = initializeExercises(contenTensionSuperficial, exerciseTemplatesTensionSuperficial);
 window.onload = initializeExercises(contenCaudal, exerciseTemplatesCaudal);
-// window.onload = initializeExercises(contenRapidezFlujoPeso, exerciseTemplatesRapidezFlujoPeso);
+window.onload = initializeExercises(contenRapidezFlujoPeso, exerciseTemplatesRapidezFlujoPeso);
 window.onload = initializeExercises(contenRapidezFlujoMasico, exerciseTemplatesRapidezFlujoMasico);
 window.onload = initializeExercises(contenRapidezEcContinuidad, exerciseTemplatesEcuacionContinuidad);
 window.onload = initializeExercises(contenRapidezEcGeneralEnergia, exerciseTemplatesEcuacionGeneralEnergia);
@@ -1617,4 +1617,4 @@ window.onload = initializeExercises(contenRapidezSistemasParalelo, exerciseTempl
 window.onload = initializeExercises(contenRapidezSeleccionBombas, exerciseTemplatesSeleccionBombas);
 
 
-
+console.log(cont);
