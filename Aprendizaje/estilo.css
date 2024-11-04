@@ -53,13 +53,13 @@ body {
     font-size: 4.8vh;
     letter-spacing: 0.28vh;
     color: #aaaaaa;
-    background: linear-gradient(to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.1));
+    background: linear-gradient(to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.53));
     margin-bottom: 10vh;
 }
 
 .content__intro--pr {
-    color: gray;
-    background: linear-gradient(to right, rgba(0, 128, 255, 0), rgba(0, 128, 255, 0.5));
+    color: white;
+    background: linear-gradient(to left, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.53));
 }
 
 .content__intro--link {
