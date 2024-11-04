@@ -76,11 +76,14 @@ header {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    background-color: rgb(63 38 32);
 }
 
 .hero p {
     font-size: 1.2rem;
     line-height: 1.6;
+    background-color: rgb(63 38 32);
+
 }
 
 
