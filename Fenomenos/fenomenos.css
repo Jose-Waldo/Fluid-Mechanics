@@ -1075,3 +1075,61 @@
     color: #1d87f0;
 }
 
+
+/* Explicación de las animaciones */
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            margin-top: 60px;
+        }
+
+        /* Estilos para la sección de fenómenos */
+        .fenomenos-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 1rem;
+        }
+
+        .fenomeno {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .fenomeno h3 {
+            color: #568fd9;
+            margin-bottom: 1rem;
+        }
+
+        .fenomeno p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .fenomeno .section-title {
+            font-weight: bold;
+            color: #568fd9;
+            margin-top: 1rem;
+        }
+
+        .imagen-de-animación {
+            width: 725px;
+            height: 500px;
+            margin-left: 200px;
+        }
+
+.titulo-descripcion-anima {
+    color: #1d87f0;
+    text-align: center;
+    text-decoration: underline;
+}
