@@ -100,7 +100,7 @@
     height: 90px;
     background-color: rgb(96, 163, 241);
     position: absolute;
-    top: 380px;
+    top: 350px;
     left: 350px;
     color: white;
     text-align: center;
@@ -1032,7 +1032,7 @@
     height: 1100px;
     padding-top: 60px;
     margin-bottom: 20vh;
-    margin-top: 20vh;
+    /* margin-top: -5vh; */
     box-sizing: border-box;
     position: relative;
     border: solid 3px #6ba8e4;
@@ -1075,6 +1075,26 @@
     color: #1d87f0;
 }
 
+.animacionCubo {
+    margin-top: -27vh;
+    margin-bottom: 27vh;
+    height: 1000px;
+    display: block;
+}
+
+.contenedorPrensa {
+    margin-top: -28vh;
+    margin-bottom: 37vh;
+    height: 1100px;
+    display: block;
+}
+
+.animacion-caudal {
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+    height: 1100px;
+    display: block;
+}
 
 /* Explicación de las animaciones */
         /* Estilos globales */
