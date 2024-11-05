@@ -69,6 +69,11 @@
     position: absolute;
     left: calc(50% - 40px);
     z-index: 2;
+    cursor: pointer;
+}
+
+.canica:hover {
+    background-color: rgb(122, 244, 15);
 }
 
 .fluido {
@@ -92,10 +97,10 @@
 
 .resultado {
     width: 300px;
-    height: 50px;
+    height: 90px;
     background-color: rgb(96, 163, 241);
     position: absolute;
-    top: 375px;
+    top: 380px;
     left: 350px;
     color: white;
     text-align: center;
@@ -103,6 +108,8 @@
     align-content: center;
     padding-left: 3vh;
     padding-right: 3vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .titilacion {
@@ -606,18 +613,25 @@
 
 /*ANIMACIÓN DE CAUDAL*/
 .animacion-caudal {
-    width: 26cm;
-    height: 750px;
     border: solid 4px #6ba8e4;
     box-sizing: border-box;
-    padding: 7vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px 400px;
     grid-row-gap: 10px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 100px;
     margin-top: 40vh;
+    width: 1000px;
+    height: 1100px;
+    position: relative;
+}
+
+.cambio {
+    margin-top: 30vh;
 }
 
 .contenedor-tuberia {
@@ -1013,4 +1027,51 @@
     cursor: pointer;
 }
 
+.secci-animaciones {
+    width: 1000px;
+    height: 1100px;
+    padding-top: 60px;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+    box-sizing: border-box;
+    position: relative;
+    border: solid 3px #6ba8e4;
+}
+
+.titulo-animación {
+    color: #6ba8e4;
+    height: 30px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.titulo-animación-caudal {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    text-align: center;
+    color: #6ba8e4;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.titulo-animación {
+    cursor: pointer;
+}
+
+.titulo-animación:hover {
+    color: #1d87f0;
+}
+
+.titulo-animación-caudal:hover {
+    color: #1d87f0;
+}
 

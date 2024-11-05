@@ -91,7 +91,7 @@ canica.addEventListener("click", function(){
         calculorTiempo(densidadLiquido, densidadCanica);
         canica.classList.add("animacion");
         canica.style.transition = 0.2 + "s";
-        informacion.textContent = "Debido a que la densidad de la canica es MENOR, la FUERZA que ejerce el fluido es MAYOR";
+        informacion.innerHTML = "Debido a que la densidad de la canica es MENOR, la FUERZA que ejerce el fluido es MAYOR" + " <b>Presióne F5 para reiniciar la animación</b>";
         informacion.classList.add("titilacion");
     }
 
@@ -99,7 +99,7 @@ canica.addEventListener("click", function(){
         calculorTiempo(densidadLiquido, densidadCanica);
         canica.style.transform = "translateY(" + 220 + "px)";
         canica.style.transition = tiempo + "s";
-        informacion.textContent = "El tiempo que tarda la canica en llegar al fondo es: " + (tiempo/5).toFixed(2) + "s";
+        informacion.innerHTML = "El tiempo que tarda la canica en llegar al fondo es: " + (tiempo/5).toFixed(2) + "s" + " <b>Presióne F5 para reiniciar la animación</b>";
         informacion.classList.add("titilacion");
         console.log(tiempo);
 
@@ -111,6 +111,8 @@ canica.addEventListener("click", function(){
             crearPuntoCanica(primero, "blue", 400);
         }
     }
+
+    
 })
 
 
