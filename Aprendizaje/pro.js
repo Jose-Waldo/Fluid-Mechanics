@@ -1501,7 +1501,7 @@ function createExercise(template, index) {
     const exerciseElement = document.createElement('div');
     exerciseElement.className = 'exercise-card';
     exerciseElement.innerHTML = `
-        <h3>Ejercicio ${index + 1}</h3>
+        <h3>Ejercicio ${index - 4}</h3>
         <p>${exercise.question}</p>
         <button class="btn hint-btn" onclick="toggleHint(${index})">Mostrar pista</button>
         <button class="btn solution-btn" onclick="toggleSolution(${index})">Mostrar solución</button>
